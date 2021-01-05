@@ -24,7 +24,32 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+h4 {
+    font-size: .75em;
+    color: gray;
+    text-align: center;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #08BDBD;
+}
 
 .top-inputs,
 .check-inputs,
@@ -39,33 +64,8 @@ form {
     width: 100%;
 }
 
-li {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-}
-
 .top-inputs li {
     flex-direction: column;
-}
-
-#name,
-#email,
-#phone-number,
-#address,
-#city,
-#state,
-#zip {
-    margin-bottom: 20px;
-    display: block;
-    height: 30px;
-    background: lightgrey;
-    border: none;
-    border-radius: 5px;
-}
-
-fieldset {
-    border: none;
 }
 
 .heading {
@@ -118,17 +118,6 @@ fieldset {
     margin-top: 30px;
 }
 
-#news-html,
-#news-css,
-#news-js,
-#radio-html,
-#radio-pdf {
-    float: right;
-    order: -1;
-    margin-right: 10px;
-    margin-bottom: 30px;
-}
-
 .bot-half {
     text-align: left;
 }
@@ -142,26 +131,39 @@ fieldset {
     margin-top: 20px;
 }
 
+#name,
+#email,
+#phone-number,
+#address,
+#city,
+#state,
+#zip {
+    margin-bottom: 20px;
+    display: block;
+    height: 30px;
+    background: lightgrey;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#news-html,
+#news-css,
+#news-js,
+#radio-html,
+#radio-pdf {
+    float: right;
+    order: -1;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
 #other-interests {
     margin-top: 5px;
     width: 100%;
     background: lightgrey;
     border: none;
     border-radius: 5px;
-}
-
-h4 {
-    font-size: .75em;
-    color: gray;
-    text-align: center;
-}
-
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-    outline: none;
-    box-shadow: 0 0 10px #08BDBD;
 }
 
 @media (min-width: 768px) {
@@ -186,7 +188,11 @@ button:focus {
     .top-inputs .lbl {
         margin-left: 20px;
     }
-    
+
+    .top-half {
+        margin-left: 15px;
+    }
+
     #name,
     #email,
     #phone-number,
@@ -196,10 +202,6 @@ button:focus {
     #zip {
        width: 60%;
        justify-items: right;
-    }
-
-    .top-half {
-        margin-left: 15px;
     }
 
 }
