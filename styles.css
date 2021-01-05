@@ -1,0 +1,205 @@
+* {
+    font-family: "Roboto Mono", "sans-seriff";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #92DCE5;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+form {
+    margin: auto;
+    background: #F8F7F9;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);}
+
+.top-inputs,
+.check-inputs,
+.radio-inputs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.top-inputs li {
+    flex-direction: column;
+}
+
+#name,
+#email,
+#phone-number,
+#address,
+#city,
+#state,
+#zip {
+    margin-bottom: 20px;
+    display: block;
+    height: 30px;
+    background: lightgrey;
+    border: none;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+.heading {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2D42;
+    height: 100px;
+}
+
+.company-name {
+    text-transform: uppercase;
+    color: white;
+    padding: 0 5px;
+}
+
+.news-info,
+.rad-info {
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+.lbl {
+    display: block;
+    text-align: left;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.top-line {
+    margin: 15px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.bot-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletter {
+    margin-top: 30px;
+}
+
+#news-html,
+#news-css,
+#news-js,
+#radio-html,
+#radio-pdf {
+    float: right;
+    order: -1;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.bot-half {
+    text-align: left;
+}
+
+.submit {
+    width: 100%;
+    background: #74A4BC;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#other-interests {
+    margin-top: 5px;
+    width: 100%;
+    background: lightgrey;
+    border: none;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: .75em;
+    color: gray;
+    text-align: center;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #08BDBD;
+}
+
+@media (min-width: 768px) {
+
+    form {
+        width: 60%;
+        margin-top: 40px;
+    }
+
+    .info-news {
+        margin-bottom: 40px;
+    }
+
+    
+
+    .top-inputs li {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .top-inputs .lbl {
+        margin-left: 20px;
+    }
+    
+    #name,
+    #email,
+    #phone-number,
+    #address,
+    #city,
+    #state,
+    #zip {
+       width: 60%;
+       justify-items: right;
+    }
+
+    .top-half {
+        margin-left: 15px;
+    }
+
+}
